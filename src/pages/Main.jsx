@@ -133,4 +133,5 @@ const SearchBtn = styled.button`
   height: 35px;
   border: none;
   border-radius: 20px;
+  background-color: #ff8c00;
 `;

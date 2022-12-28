@@ -114,7 +114,7 @@ const BoardItemDetail = () => {
                 }
                 alt="boardImg"
               />
-              <StTime>시간 들어갈 자리</StTime>
+              <StTime>{item.date}</StTime>
             </StLeftWrapper>
             <StRightWrapper>
               <StContent style={{ display: showEdit ? "block" : "none" }}>

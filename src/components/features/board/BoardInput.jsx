@@ -203,11 +203,11 @@ const BoardInput = () => {
     console.log("fireURL:", fireURL);
 
     dispatch(__postBoards(newBoard));
-
     setTitle("");
     setContent("");
     setUser("");
     setPW("");
+    localStorage.clear();
     navigator("/");
   };
 
