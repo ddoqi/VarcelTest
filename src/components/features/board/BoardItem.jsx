@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import LogoImg from "../../styles/Logo.png";
 
 const BoardItem = ({ board }) => {
   const { isLoading, error } = useSelector((state) => state.boardSlice);
@@ -17,7 +18,10 @@ const BoardItem = ({ board }) => {
     <Box>
       <DetailLink to={`/${board.id}`} key={board.id}>
         <div className="imgBox">
-          <img src={board.ImgUrl} alt="boardImg" />
+          <img
+            src={board.ImgUrl === board.ImgUrl ? board.ImgUrl : LogoImg}
+            alt="boardImg"
+          />
         </div>
         <div className="content">
           <h3 style={{ "font-size": "25px" }}>{board.title}</h3>

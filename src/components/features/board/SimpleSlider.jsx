@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import carouselImg1 from "../../../sampleimg/img1.png";
 import carouselImg2 from "../../../sampleimg/img2.png";
-import carouselImg3 from "../../../sampleimg/img3.png";
+import carouselImg3 from "../../../sampleimg/img4.png";
 
 export default class SimpleSlider extends Component {
   render() {
